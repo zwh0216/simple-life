@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-import 'package:simple_life/page/myself/myself.dart';
+import 'package:simple_life/page/account/account.dart';
 import '../page/home/home.dart';
 
 final routes = GoRouter(
@@ -11,8 +11,8 @@ final routes = GoRouter(
         builder: (context, state) => Home()
     ),
     GoRoute(
-        path: '/myself',
-        name: 'myself',
+        path: '/account',
+        name: 'account',
         builder: (context, state) => Myself()
     )
   ]
