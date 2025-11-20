@@ -68,8 +68,9 @@ class _ButtonTabBar extends State<ButtonTabBar>{
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: widget.actions.map((item) => TextButton(
+      mainAxisAlignment: MainAxisAlignment.start,
+      spacing: 8,
+      children: widget.actions.map((item) =>  TextButton(
         onPressed: () => onSelected(item.key),
         style: getButtonStyle(item),
         child: renderBtnLabel(item),
