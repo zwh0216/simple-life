@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_life/page/home/constant/bottom_bar_config.dart';
 
 class CustomBottomBar extends StatelessWidget {
   const CustomBottomBar({
@@ -19,13 +20,11 @@ class CustomBottomBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return BottomNavigationBar(
       currentIndex: currentTab,
       selectedItemColor: Colors.red,
-      items: [
-        const BottomNavigationBarItem(icon: Icon(Icons.home), label: '首页'),
-        const BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: '个人'),
-      ],
+      items: BottomBarConfig.bottomNavBarItems,
       onTap: onPressedBtn,
     );
   }
