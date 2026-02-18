@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import './BaseViewModel.dart';
+import 'BaseViewModel.dart';
 
 abstract class BaseState<T extends StatefulWidget, V extends BaseViewModel>
     extends State<T> {
