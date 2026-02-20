@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_life/widget/drawer_page_wrap.dart';
+import '../drawer_page_wrap.dart';
 import './model/select_option_model.dart';
 
 class Select extends StatelessWidget {

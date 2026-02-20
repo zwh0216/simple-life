@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:simple_life/page/home/widget/custom_bottom_bar.dart';
 
 
 class Account extends StatelessWidget {
@@ -8,7 +7,7 @@ class Account extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Text('this is account Page')
+      child: Text('个人页面')
     );
 
   }

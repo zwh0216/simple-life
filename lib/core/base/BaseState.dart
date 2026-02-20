@@ -17,7 +17,8 @@ abstract class BaseState<T extends StatefulWidget, V extends BaseViewModel>
       required R Function(V) selector,
       required Widget Function(BuildContext, R, Widget?) builder,
       Widget? child,
-    }) builderWithSelector,
+    })
+    builderWithSelector,
   );
 
   // 创建viewModel之后的钩子函数
@@ -47,6 +48,11 @@ abstract class BaseState<T extends StatefulWidget, V extends BaseViewModel>
   // 注入viewModel
   @override
   Widget build(BuildContext context) {
-    return buildWithViewModel(context, builderWithSelector);
+    return ChangeNotifierProvider.value(
+      value: _viewModel,
+      builder: (context, _) {
+        return buildWithViewModel(context, builderWithSelector);
+      },
+    );
   }
 }
