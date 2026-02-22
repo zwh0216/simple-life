@@ -30,8 +30,8 @@ class _HomeState extends BaseState<Home, HomeViewModel> {
   ];
 
   static const List<Widget> pages = [
-    TaskPage(),
     Calendar(),
+    TaskPage(),
     StatisticsPage(),
     Account(),
   ];
@@ -84,7 +84,6 @@ class _HomeState extends BaseState<Home, HomeViewModel> {
         return BottomNavigationBar(
           selectedItemColor: Colors.red,
           unselectedItemColor: Colors.grey,
-          showUnselectedLabels: true,
           currentIndex: currentTab,
           items: bottomNavBarItems,
           onTap: (int index) {
